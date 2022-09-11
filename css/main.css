@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header .fixed-top {
+	background: url(../image/bg.png) !important;
+	font-weight: bold;
+	border:none;
+	padding: 0px;
+	overflow-y: overlay;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background: url(../image/bg.png) !important;
+	font-family:arial,helvetica,sans-serif,verdana,'Open Sans';
+}
+
+header, footer, aside, nav, section, article{
+	display:block;
+}
+
+.content {
+	margin-top: 116px;
+	width: 100%;
+}
+
+aside {
+	background-color: #001B2E;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+}
+
+aside article h4 {
+	color: red;
+	font-weight: bold;
+	text-align: center;
+}
+
+aside .btn {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size: large;
+}
+
+.footer{
+	text-align:center;
+	padding: 20px 20px;
+	border-top:solid purple 5px;
+}
+
+.navbar .nav li .active{
+	background-color: #60CFFF;
+}
+
+@media (max-width: 910px){ /* 991px for large tablets, 767 for medium tablet sizes*/
+	#categories .btn {
+		white-space: normal; /* or pre-wrap */
+		word-wrap: break-word;
+		word-break: normal;
+		font-size: small;
+		padding-left: 0px;
+		padding-right: 0px;
+		font-weight: bold;
+		border-radius: 0px;
+		border: none;
+		line-height: 2em;
+	}
+
+	#categories .nav .active {
+		background-color: #41FF41;
+		border: none;
+	}
+
+	.footer, .fixed-top .nav, .drpdwn, .navbar-form button {
+		display: none;
+	}
+
+
+	.navbar form {
+		float: right;
+		display: block;
+		width: 50%;
+		border-bottom: none;
+	}
+
+	.cart img {
+		float: right;
+	}
+	.jssora093 {
+		display: none !important; /* remove the left and right arrows on image slider */
+	}
+
+	#jssor_1 {
+	    position: relative;
+	    margin: 0 auto;
+	    top: 0px;
+	    left: 0px;
+	    width: 100%;
+	    height: 180px !important;
+		overflow: hidden;
+		visibility: hidden;
+	}
+
+	#jssor_1 .img-placement img {
+		height: 180px !important;
+	}
+
+	aside {
+		background-color: #fff;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		margin-left: 0px;
+	}
+
+	section {
+		padding: 0px !important;
+	}
+
+	aside p:first-child {
+		font-size: x-small;
+	}
+
+	/* signup date of birth and sex*/
+	.birthsex {
+		padding-left: 0em;
+	}
+
+	body {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.account_tab ul li {
+		display: inline-flex;
+		margin-top: 35px;
+		justify-content: center;
+	}
+
+	.account_tab ul li button {
+		width: 100px;
+	}
+
+	/* Styling the fixed to buttom nav buttons */
+	.fixed-bottom {
+		border-top: 2px solid !important;
+		margin: -10px 0px !important;
+	}
+
+	.fixed-bottom ul {
+		margin-left: 0px;
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	.fixed-bottom ul li {
+		float: left;
+		width: 20%;
+	}
+
+	.fixed-bottom img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.fixed-bottom button {
+		width: 100%;
+		border-radius: 0px;
+	}
+
+	.fixed-bottom ul li .active {
+		background-color: red;
+	}
+}
+
+@media (min-width: 920px) {
+	
+
+	#jssor_1 .img-placement img {
+		width: 200px;
+	}
+
+	.drpdwn {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	}
+
+	footer .fixed-bottom {
+		display: none;
+	}
+}
+
+.drpdwn .dropdown {
+	float: left;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-toggle{
+	background-color: #4CAF50;
+	color: white;
+	padding: 2px 20px;
+	font-size: x-large;
+	border-radius: 6px;
+	font-weight: lighter;
+	margin: 2px 5px;
+	font-family: serif;
+}
+
+.dropdown .dropdown-menu {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	width: 100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-menu a{
+	white-space: normal !important;
+	word-break: normal !important;
+	word-wrap: break-word !important;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-menu a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown:hover .dropdown-toggle {
+	background-color: #3e8e41;
+}
+
+.tab-content .card-header {
+	height: 25px;
+}
+
+.tab-content .card-header p {
+	display: inline-block;
+	font-size: x-small;
+	font-weight: bold;
+	margin-top: -5px;
+}
+
+.deals-of-day .card-header p:first-child {
+	float: left;
+}
+
+.deals-of-day .card-header p:last-child {
+	float: right;
+}
+
+#sales {
+	text-align: center;
+	color: green;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.flash_sales .card-header {
+	padding: 0px;
+	margin-left: 2px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.products .card {
+	width: 19%;
+	display: inline-block;
+	text-align: center;
+	padding: 0px;
+}
+
+.products #first {
+	margin-left: -5em;
+}
+
+.products #last {
+	margin-right: -5em;
+}
+
+
+/*--------------------------------------------------------------------------
++	jssor slider css
+--------------------------------------------------------------------------*/
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 053 css*/
+.jssorb053 .i {position:absolute;cursor:pointer;}
+.jssorb053 .i .b {fill:#fff;fill-opacity:0.3;}
+.jssorb053 .i:hover .b {fill-opacity:.7;}
+.jssorb053 .iav .b {fill-opacity: 1;}
+.jssorb053 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 093 css*/
+.jssora093 {display:block;position:absolute;cursor:pointer;}
+.jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093:hover {opacity:.8;}
+.jssora093.jssora093dn {opacity:.6;}
+.jssora093.jssora093ds {opacity:.3;pointer-events:none;}
+
+/*jssor loading screen css*/
+#jssor_1 {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    visibility:hidden;
+}
+
+#jssor_1 .jssorl-009-spin {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#jssor_1 .jssorl-009-spin img {
+    margin-top: -19px;
+    position: relative;
+    top: 50%;
+    width: 38px;
+    height: 38px;"
+}
+
+#jssor_1 .img-placement {
+	cursor: default;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 500px;
+	overflow:hidden;
+}
+
+table {
+	background-color: #FFFFFF !important;
+	border-collapse:collapse; /*collapses the double border in the table*/
+	font-size: x-large;
+}
+
+tr{
+	border: 5px solid #E1E1E1;
+}
+
+td{
+	border-collapse: collapse;
+	border-radius: 5px;
+}
+
+
+td:first-child{ /* selects every second row*/
+	background-color: #b3daed;
+	width: 200px;
+	padding-left: 10px;
+}
+
+td:last-child{
+	padding-left: 10px;
+}
+
+.profile .card-header {
+	background-color: #B3DAED !important;
+	font-size: x-large; font-weight: bold;
+}
+
+.profile .card-body {
+	background-color: #E1E1E1;
+}
+
+.profile_edit .profie_button{
+	display: flex;
+	justify-content: center;
+}
+
+.profile_edit ul li {
+	list-style-type: none;
+	margin: 2px;
+	float: left;
+	display: inline-block;
+	align-self: center;
+}
+
+.profile_edit .edit {
+	display: none;
+}
+
+/* .profile_edit.edit .edit {
+	display: initial;
+} */
+
+/* .profile_edit .noedit {
+	display: initial;
+} */
+
+.profileEdit{
+	display: flex;
+	float: right;
+}
